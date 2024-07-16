@@ -1,8 +1,50 @@
-# React + Vite
+# Invoicing System
+Backend Github link: [Backend GitHub](https://github.com/SmanSayeed/invoice-sheduler-backend)
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an integrated invoicing system for service providers, developed using Laravel for the backend and React.js for the frontend. The system is designed to be scalable and cloud-based, handling client and device management, invoice generation in multiple formats, email functionality, a reminder system for overdue invoices, and profiles for clients and service providers.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="screenshots/email-ss.png" alt="Dashboard" width="100%" height="auto" />
+</P>
+<p align="center">
+  <img src="screenshots/pdf-ss.png" alt="Client Management" width="100%" height="auto" />
+</P>
+<p align="center">
+  <img src="screenshots/responsive-frontend-design.png" alt="Generate Invoice" width="400" height="800" />
+</p>
+
+## Features
+
+- **Client Management**: Add, edit, and manage clients.
+- **Device Management**: Manage devices associated with clients.
+- **Invoice Generation**: Generate invoices based on services provided, with detailed breakdowns.
+- **Email Functionality**: Send invoices via email with attachments.
+- **Reminder System**: Automatic reminders for overdue invoices.
+- **Multi-format Invoices**: Generate invoices in PDF and other formats.
+
+## Technologies Used
+
+- **Backend**: Laravel
+- **Frontend**: React.js, Bootstrap
+- **Database**: MySQL
+- **Authentication**: Laravel Sanctum
+- **Role and Permission Management**: Spatie Laravel-Permission
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+        git clone https://github.com/SmanSayeed/invoice-scheduler-frontend
+   ```
+
+2. Enter the repository and run following commands
+
+   ```bash
+        cp .env.example .env 
+        npm install 
+        npm run dev
+   ```
